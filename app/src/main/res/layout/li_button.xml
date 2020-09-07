@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="text"
+            type="String" />
+
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3CF1EBF1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            icon="@{icon}"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:tint="#FFFFFF"
+            tools:src="@drawable/wind" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{text}"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            tools:text="Example" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            tools:text="Example2" />
+    </LinearLayout>
+
+</layout>
